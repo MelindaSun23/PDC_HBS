@@ -1,0 +1,99 @@
+Name: meep
+Email: meep3432@gmail.com
+Phone: 2043221232
+Address: 123 melrose road
+Room Type: DOUBLE
+Check-In Date: 2024-03-23
+Check-Out Date: 2024-03-31
+Breakfast Included: true
+=====================================
+Name: edkedked
+Email: edededede@gmail.com
+Phone: 32323232323
+Address: 23232 melrose road
+Room Type: ENSUITE
+Check-In Date: 2323232
+Check-Out Date: 23232323
+Breakfast Included: true
+=====================================
+Name: quack quack
+Email: quack@gmai.com
+Phone: 284726632
+Address: 263 greenlane rd
+Room Type: DELUXE
+Check-In Date: 23/04/2004
+Check-Out Date: 30/04/2004
+Breakfast Included: true
+=====================================
+Name: bella
+Email: bell3
+Phone: 1
+Address: 1
+Room Type: STANDARD
+Check-In Date: bejwk
+Check-Out Date: nwjkdf
+Breakfast Included: false
+___________________________________
+Name: 12
+Email: 1
+Phone:  dscnl
+Address: nskck
+Room Type: DOUBLE
+Check-In Date: ncsk
+Check-Out Date: sck djc
+Breakfast Included: false
+___________________________________
+Name: Bella
+Email: Bell
+Phone: 0273222674
+Address: 12 B rod
+Room Type: ENSUITE
+Check-In Date: 10/09/2024
+Check-Out Date: 11/09/2024
+Breakfast Included: false
+___________________________________
+Name: Bella
+Email: Bell
+Phone: 0120129102910
+Address: nncks
+Room Type: DOUBLE
+Check-In Date: 12/12/2025
+Check-Out Date: 12/12/2026
+Breakfast Included: false
+___________________________________
+Name: dwq
+Email: cds
+Phone: 1012931921039
+Address: scd
+Room Type: STANDARD
+Check-In Date: 12/12/3333
+Check-Out Date: 12/12/4444
+Breakfast Included: false
+___________________________________
+Name: bdskjc
+Email: jdvknd
+Phone: 029120129209102
+Address: njkcds
+Room Type: STANDARD
+Check-In Date: 12/12/2025
+Check-Out Date: 12/12/2026
+Breakfast Included: true
+___________________________________
+Name: b
+Email: b
+Phone: 11111111111
+Address: 12
+Room Type: STANDARD
+Check-In Date: 12/12/5555
+Check-Out Date: 12/12/6666
+Breakfast Included: true
+___________________________________
+Name: be
+Email: be
+Phone: 111111111111
+Address: 12
+Room Type: STANDARD
+Check-In Date: 12/12/2224
+Check-Out Date: 12/12/2225
+Breakfast Included: true
+___________________________________
