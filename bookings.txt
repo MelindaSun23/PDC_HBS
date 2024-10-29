@@ -1,99 +1,288 @@
-Name: meep
-Email: meep3432@gmail.com
-Phone: 2043221232
-Address: 123 melrose road
-Room Type: DOUBLE
-Check-In Date: 2024-03-23
-Check-Out Date: 2024-03-31
-Breakfast Included: true
-=====================================
-Name: edkedked
-Email: edededede@gmail.com
-Phone: 32323232323
-Address: 23232 melrose road
+=== Booking Details ===
+Booking ID: 1
+Customer Name: M
+Email: mqwerty@gmail.com
+Phone: 82716354732
+Address: 123 greenlane road
 Room Type: ENSUITE
-Check-In Date: 2323232
-Check-Out Date: 23232323
+Check-In Date: 01/03/2025
+Check-Out Date: 28/03/2025
 Breakfast Included: true
+Total Cost: $240.0
 =====================================
-Name: quack quack
-Email: quack@gmai.com
-Phone: 284726632
-Address: 263 greenlane rd
+
+=== Booking Details ===
+Booking ID: 2
+Customer Name: melon
+Email: melonday123@gmail.com
+Phone: 02137281928
+Address: 111 grayview road
+Room Type: STANDARD
+Check-In Date: 01/03/2025
+Check-Out Date: 28/03/2025
+Breakfast Included: false
+Total Cost: $80.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: Test User
+Email: test@test.com
+Phone: 12345678
+Address: Test Address
+Room Type: STANDARD
+Check-In Date: 01/12/2024
+Check-Out Date: 03/12/2024
+Breakfast Included: false
+Total Cost: $80.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 1
+Customer Name: Test User
+Email: test@test.com
+Phone: 12345678
+Address: Test Address
+Room Type: STANDARD
+Check-In Date: 01/12/2024
+Check-Out Date: 03/12/2024
+Breakfast Included: false
+Total Cost: $80.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 1
+Customer Name: qwerty
+Email: qwerty098@gmail.com
+Phone: 0219273625
+Address: 123 green road
 Room Type: DELUXE
-Check-In Date: 23/04/2004
-Check-Out Date: 30/04/2004
+Check-In Date: 01/12/2024
+Check-Out Date: 10/12/2024
 Breakfast Included: true
+Total Cost: $200.0
 =====================================
-Name: bella
-Email: bell3
-Phone: 1
-Address: 1
+
+=== Booking Details ===
+Booking ID: 1
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
 Room Type: STANDARD
-Check-In Date: bejwk
-Check-Out Date: nwjkdf
-Breakfast Included: false
-___________________________________
-Name: 12
-Email: 1
-Phone:  dscnl
-Address: nskck
-Room Type: DOUBLE
-Check-In Date: ncsk
-Check-Out Date: sck djc
-Breakfast Included: false
-___________________________________
-Name: Bella
-Email: Bell
-Phone: 0273222674
-Address: 12 B rod
-Room Type: ENSUITE
-Check-In Date: 10/09/2024
-Check-Out Date: 11/09/2024
-Breakfast Included: false
-___________________________________
-Name: Bella
-Email: Bell
-Phone: 0120129102910
-Address: nncks
-Room Type: DOUBLE
-Check-In Date: 12/12/2025
-Check-Out Date: 12/12/2026
-Breakfast Included: false
-___________________________________
-Name: dwq
-Email: cds
-Phone: 1012931921039
-Address: scd
-Room Type: STANDARD
-Check-In Date: 12/12/3333
-Check-Out Date: 12/12/4444
-Breakfast Included: false
-___________________________________
-Name: bdskjc
-Email: jdvknd
-Phone: 029120129209102
-Address: njkcds
-Room Type: STANDARD
-Check-In Date: 12/12/2025
-Check-Out Date: 12/12/2026
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
 Breakfast Included: true
-___________________________________
-Name: b
-Email: b
-Phone: 11111111111
-Address: 12
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
 Room Type: STANDARD
-Check-In Date: 12/12/5555
-Check-Out Date: 12/12/6666
+Check-In Date: 01/11/2026
+Check-Out Date: 03/11/2026
 Breakfast Included: true
-___________________________________
-Name: be
-Email: be
-Phone: 111111111111
-Address: 12
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 102
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
 Room Type: STANDARD
-Check-In Date: 12/12/2224
-Check-Out Date: 12/12/2225
+Check-In Date: 01/11/2027
+Check-Out Date: 03/11/2027
 Breakfast Included: true
-___________________________________
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 201
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 202
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 203
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 204
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 301
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+=== Booking Details ===
+Booking ID: 401
+Customer Name: Test User
+Email: test@test.com
+Phone: 12345678
+Address: Test Address
+Room Type: STANDARD
+Check-In Date: 01/12/2024
+Check-Out Date: 03/12/2024
+Breakfast Included: false
+Total Cost: $80.0
+=====================================
+
+=== Booking Details ===
+=== Booking Details ===
+Booking ID: 101
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: John Doe
+Email: john@example.com
+Phone: 0123456789
+Address: 123 Test St
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: Jerry Johnson
+Email: Happygolucky@hotmail.com
+Phone: 9372615821
+Address: 200 Mountain Pl
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: Jerry Johnson
+Email: Happygolucky@hotmail.com
+Phone: 9372615821
+Address: 200 Mountain Pl
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: Jerry Johnson
+Email: Happygolucky@hotmail.com
+Phone: 9372615821
+Address: 200 Mountain Pl
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: Jerry Johnson
+Email: Happygolucky@hotmail.com
+Phone: 9372615821
+Address: 200 Mountain Pl
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/HotelBookingGUI.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/CostCalculator.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/test/HotelBookingSystemTest.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/RoomType.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/test/GUITest.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/Inputs.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/Bookable.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/LoginGUI.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/DatabaseManager.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/UserManager.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/Person.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/ValidationException.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/Booking.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/User.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/BookingManager.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/FileManager.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/Customer.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/ValidationUtils.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/PasswordHasher.java</file>
+            <file>file:/Users/m/NetBeansProjects/HotelBookingSystem1/src/hotelbookingsystem1/HotelBookingSystem.java</file>
+        </group>
+    </open-files>
+</project-private>

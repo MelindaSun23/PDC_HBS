@@ -1,0 +1,126 @@
+=== User Registration ===
+Username: eeee
+Admin: false
+Registration Date: 27/10/2024
+=====================================
+
+=== User Registration ===
+Username: qwerty
+Admin: false
+Registration Date: 27/10/2024
+=====================================
+
+=== User Registration ===
+Username: poiu
+Admin: false
+Registration Date: 27/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730001168574
+Admin: false
+Registration Date: 27/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730001220003
+Admin: false
+Registration Date: 27/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730001305801
+Admin: false
+Registration Date: 27/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730001737439
+Admin: false
+Registration Date: 27/10/2024
+=====================================
+
+=== User Registration ===
+Username: qwerty
+Admin: false
+Registration Date: 27/10/2024
+=====================================
+
+=== User Registration ===
+Username: 
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730189927517
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730189956078
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730189967234
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730189972598
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: 
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testUser
+Admin: true
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testUser
+Admin: true
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testUser
+Admin: true
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testUser
+Admin: true
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730190234403
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730193618862
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730193631029
+Admin: false
+Registration Date: 29/10/2024
+=====================================
+
