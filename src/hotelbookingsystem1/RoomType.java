@@ -10,7 +10,7 @@ public enum RoomType {
     DOUBLE(120),
     DELUXE(180),
     ENSUITE(220);
-
+// the costs
     private final double cost;
 
     RoomType(double cost) {
