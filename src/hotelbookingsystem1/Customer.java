@@ -4,8 +4,8 @@
  */
 package hotelbookingsystem1;
 
-
 public class Customer extends Person {
+
     public Customer(String name, String email, String phone, String address) {
         super(name, email, phone, address); //Pass customer details to Person class
     }

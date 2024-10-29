@@ -312,3 +312,29 @@ Breakfast Included: true
 Total Cost: $100.0
 =====================================
 
+=== Booking Details ===
+Booking ID: 101
+Customer Name: Jerry Johnson
+Email: Happygolucky@hotmail.com
+Phone: 9372615821
+Address: 200 Mountain Pl
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+
+=== Booking Details ===
+Booking ID: 101
+Customer Name: Jerry Johnson
+Email: Happygolucky@hotmail.com
+Phone: 9372615821
+Address: 200 Mountain Pl
+Room Type: STANDARD
+Check-In Date: 01/11/2024
+Check-Out Date: 03/11/2024
+Breakfast Included: true
+Total Cost: $100.0
+=====================================
+

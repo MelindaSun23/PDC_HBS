@@ -11,6 +11,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Inputs {
+
     private static final Logger logger = Logger.getLogger(Inputs.class.getName());
     private final Scanner scanner = new Scanner(System.in);
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
@@ -25,7 +26,7 @@ public class Inputs {
         return input;
     }
 
-     //Gets integer input with validation
+    //Gets integer input with validation
     public int getIntInput(String prompt) {
         System.out.print(prompt);
         while (!scanner.hasNextInt()) {
@@ -38,7 +39,7 @@ public class Inputs {
         return input;
     }
 
-     //Gets yes no input as boolean
+    //Gets yes no input as boolean
     public boolean getBooleanInput(String prompt) {
         System.out.print(prompt);
         String input = scanner.nextLine().trim().toLowerCase();

@@ -4,7 +4,6 @@
  */
 package hotelbookingsystem1;
 
-
 import java.util.logging.Logger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -12,9 +11,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 public class PasswordHasher {
+
     private static final Logger logger = Logger.getLogger(PasswordHasher.class.getName());
 
-     //Hashes a password using SHA-256 and encodes it in Base64
+    //Hashes a password using SHA-256 and encodes it in Base64
     public static String hashPassword(String password) {
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");  //Get SHA-256 message digest instance
@@ -26,6 +26,7 @@ public class PasswordHasher {
         }
     }
 //Verifies a password by hashing and comparing to a stored hashed password
+
     public static boolean verifyPassword(String password, String hashedPassword) {
         String newHash = hashPassword(password);
         return newHash.equals(hashedPassword); //Returns true if hashes match

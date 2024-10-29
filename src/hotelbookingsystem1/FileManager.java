@@ -4,7 +4,6 @@
  */
 package hotelbookingsystem1;
 
-
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -12,6 +11,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 public class FileManager {
+
     private static final Logger logger = Logger.getLogger(FileManager.class.getName()); //Logger for tracking file operations
     private static final String BOOKINGS_FILE = "bookings.txt"; //File for saving bookings
     private static final String USERS_FILE = "users.txt"; //File for saving user registration
@@ -22,6 +22,7 @@ public class FileManager {
         createBackupDirectory();
     }
 //Method to create backup directory
+
     private void createBackupDirectory() {
         File backupDir = new File(BACKUP_DIR);
         if (!backupDir.exists()) {
@@ -30,8 +31,9 @@ public class FileManager {
         }
     }
 //Method to save a bookings details to a file
+
     public void saveBookingToFile(Booking booking) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(BOOKINGS_FILE, true))) {
+        try ( BufferedWriter writer = new BufferedWriter(new FileWriter(BOOKINGS_FILE, true))) {
             writer.write("=== Booking Details ===\n");
             writer.write("Booking ID: " + booking.getId() + "\n");
             writer.write("Customer Name: " + booking.getCustomer().getName() + "\n");
@@ -51,8 +53,9 @@ public class FileManager {
         }
     }
 //Method to save user registration details to a file
+
     public void saveUserToFile(String username, boolean isAdmin) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(USERS_FILE, true))) {
+        try ( BufferedWriter writer = new BufferedWriter(new FileWriter(USERS_FILE, true))) {
             writer.write("=== User Registration ===\n");
             writer.write("Username: " + username + "\n");
             writer.write("Admin: " + isAdmin + "\n");
@@ -65,13 +68,13 @@ public class FileManager {
         }
     }
 //Method to create daily backup of bookings file
+
     public void createDailyBackup() {
-        String backupFileName = BACKUP_DIR + "backup_" + 
-                              dateFormat.format(new java.util.Date()) + ".txt";
-        
-        try (BufferedReader reader = new BufferedReader(new FileReader(BOOKINGS_FILE));
-             BufferedWriter writer = new BufferedWriter(new FileWriter(backupFileName))) {
-            
+        String backupFileName = BACKUP_DIR + "backup_"
+                + dateFormat.format(new java.util.Date()) + ".txt";
+
+        try ( BufferedReader reader = new BufferedReader(new FileReader(BOOKINGS_FILE));  BufferedWriter writer = new BufferedWriter(new FileWriter(backupFileName))) {
+
             String line;
             while ((line = reader.readLine()) != null) {
                 writer.write(line + "\n"); //Write each line to backup file
@@ -82,10 +85,11 @@ public class FileManager {
             logger.severe("Error creating backup: " + e.getMessage()); //Log any errors
         }
     }
- //Method to read bookings from file into a list
+    //Method to read bookings from file into a list
+
     public List<String> readBookingsFromFile() {
         List<String> bookings = new ArrayList<>(); //List to hold booking data
-        try (BufferedReader reader = new BufferedReader(new FileReader(BOOKINGS_FILE))) {
+        try ( BufferedReader reader = new BufferedReader(new FileReader(BOOKINGS_FILE))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 bookings.add(line); //Add each line to list

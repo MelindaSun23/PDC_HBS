@@ -4,15 +4,15 @@
  */
 package hotelbookingsystem1;
 
-
 import java.util.logging.Logger;
 import java.sql.*;
 
 public class DatabaseManager {
+
     private static final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver"; //Database driver
     private static final String JDBC_URL = "jdbc:derby:hotelDB;create=true"; //Database URL
     private static final Logger logger = Logger.getLogger(DatabaseManager.class.getName()); //Logger for info and error tracking
-    
+
     static {
         try {
             Class.forName(DRIVER); //Load database driver
@@ -23,7 +23,7 @@ public class DatabaseManager {
     }
 
     public static void initializeDatabase() {
-        try (Connection conn = getConnection()) {
+        try ( Connection conn = getConnection()) {
             createTables(conn); //Set up tables if they dont exist
             createDefaultAdmin(conn); //Create a default admin user
             logger.info("Database initialized successfully");
@@ -34,35 +34,35 @@ public class DatabaseManager {
     }
 
     private static void createTables(Connection conn) throws SQLException {
-        try (Statement stmt = conn.createStatement()) {
+        try ( Statement stmt = conn.createStatement()) {
             // Users table
-            stmt.execute("CREATE TABLE Users (" +
-                "id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY " +
-                "(START WITH 1, INCREMENT BY 1) PRIMARY KEY, " +
-                "username VARCHAR(50) UNIQUE, " +
-                "password VARCHAR(100), " +
-                "is_admin BOOLEAN)");
+            stmt.execute("CREATE TABLE Users ("
+                    + "id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY "
+                    + "(START WITH 1, INCREMENT BY 1) PRIMARY KEY, "
+                    + "username VARCHAR(50) UNIQUE, "
+                    + "password VARCHAR(100), "
+                    + "is_admin BOOLEAN)");
 
             // Customers table
-            stmt.execute("CREATE TABLE Customers (" +
-                "id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY " +
-                "(START WITH 1, INCREMENT BY 1) PRIMARY KEY, " +
-                "name VARCHAR(100), " +
-                "email VARCHAR(100), " +
-                "phone VARCHAR(20), " +
-                "address VARCHAR(200))");
+            stmt.execute("CREATE TABLE Customers ("
+                    + "id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY "
+                    + "(START WITH 1, INCREMENT BY 1) PRIMARY KEY, "
+                    + "name VARCHAR(100), "
+                    + "email VARCHAR(100), "
+                    + "phone VARCHAR(20), "
+                    + "address VARCHAR(200))");
 
             // Bookings table
-            stmt.execute("CREATE TABLE Bookings (" +
-                "id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY " +
-                "(START WITH 1, INCREMENT BY 1) PRIMARY KEY, " +
-                "customer_id INTEGER, " +
-                "room_type VARCHAR(20), " +
-                "check_in_date DATE, " +
-                "check_out_date DATE, " +
-                "breakfast BOOLEAN, " +
-                "total_cost DOUBLE, " +
-                "FOREIGN KEY (customer_id) REFERENCES Customers(id))");
+            stmt.execute("CREATE TABLE Bookings ("
+                    + "id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY "
+                    + "(START WITH 1, INCREMENT BY 1) PRIMARY KEY, "
+                    + "customer_id INTEGER, "
+                    + "room_type VARCHAR(20), "
+                    + "check_in_date DATE, "
+                    + "check_out_date DATE, "
+                    + "breakfast BOOLEAN, "
+                    + "total_cost DOUBLE, "
+                    + "FOREIGN KEY (customer_id) REFERENCES Customers(id))");
         } catch (SQLException e) {
             // If tables already exist, just log it and continue
             if (e.getSQLState().equals("X0Y32")) {
@@ -75,11 +75,11 @@ public class DatabaseManager {
 
     private static void createDefaultAdmin(Connection conn) throws SQLException {
         String checkAdmin = "SELECT COUNT(*) FROM Users WHERE username = 'admin'";
-        try (PreparedStatement ps = conn.prepareStatement(checkAdmin)) {
+        try ( PreparedStatement ps = conn.prepareStatement(checkAdmin)) {
             ResultSet rs = ps.executeQuery();
             if (rs.next() && rs.getInt(1) == 0) { // If no admin exists create one
                 String insertAdmin = "INSERT INTO Users (username, password, is_admin) VALUES (?, ?, ?)";
-                try (PreparedStatement insertPs = conn.prepareStatement(insertAdmin)) {
+                try ( PreparedStatement insertPs = conn.prepareStatement(insertAdmin)) {
                     insertPs.setString(1, "admin");
                     insertPs.setString(2, PasswordHasher.hashPassword("admin123"));
                     insertPs.setBoolean(3, true);

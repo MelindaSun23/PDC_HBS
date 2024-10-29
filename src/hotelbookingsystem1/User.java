@@ -4,8 +4,8 @@
  */
 package hotelbookingsystem1;
 
-
 public class User {
+
     private int id; //Unique user if
     private String username; //username for login
     private boolean isAdmin; //admin privillages flag
@@ -17,7 +17,15 @@ public class User {
         this.isAdmin = isAdmin;
     }
 
-    public int getId() { return id; } //get users id
-    public String getUsername() { return username; } //get users username
-    public boolean isAdmin() { return isAdmin; } //check if user has admin rights
+    public int getId() {
+        return id;
+    } //get users id
+
+    public String getUsername() {
+        return username;
+    } //get users username
+
+    public boolean isAdmin() {
+        return isAdmin;
+    } //check if user has admin rights
 }

@@ -4,7 +4,6 @@
  */
 package hotelbookingsystem1;
 
-
 public class Booking {
 
     private int id; //Unique booking id

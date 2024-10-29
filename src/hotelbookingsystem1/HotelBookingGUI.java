@@ -12,8 +12,6 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.logging.Logger;
 
-
-
 public class HotelBookingGUI extends JFrame {
 
     private static final Logger logger = Logger.getLogger(HotelBookingGUI.class.getName());
@@ -32,7 +30,6 @@ public class HotelBookingGUI extends JFrame {
         logger.info("GUI initialized for user: " + user.getUsername());
     }
 
-    
     private void initializeGUI() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1000, 700);
@@ -40,7 +37,7 @@ public class HotelBookingGUI extends JFrame {
 
         cardLayout = new CardLayout();
         mainPanel = new JPanel(cardLayout);
-        mainPanel.setBackground(new Color(187, 245, 235)); 
+        mainPanel.setBackground(new Color(187, 245, 235));
 
         // Create and add panels
         mainPanel.add(createMainMenu(), "MainMenu");
@@ -60,7 +57,7 @@ public class HotelBookingGUI extends JFrame {
 
         // File Menu
         JMenu fileMenu = new JMenu("File");
-        fileMenu.setForeground(new Color(12, 0, 140)); 
+        fileMenu.setForeground(new Color(12, 0, 140));
         JMenuItem mainMenuItem = new JMenuItem("Main Menu");
         JMenuItem logoutMenuItem = new JMenuItem("Logout");
 
@@ -104,7 +101,7 @@ public class HotelBookingGUI extends JFrame {
 
     private JPanel createMainMenu() {
         JPanel panel = new JPanel(new GridBagLayout());
-        panel.setBackground(new Color(187, 245, 235)); 
+        panel.setBackground(new Color(187, 245, 235));
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);
         gbc.gridwidth = GridBagConstraints.REMAINDER;
@@ -113,7 +110,7 @@ public class HotelBookingGUI extends JFrame {
         // Welcome Label
         JLabel welcomeLabel = new JLabel("Welcome to Hotel Serenity, " + currentUser.getUsername());
         welcomeLabel.setFont(new Font("Arial", Font.BOLD, 24));
-        welcomeLabel.setForeground(new Color(12, 0, 140)); 
+        welcomeLabel.setForeground(new Color(12, 0, 140));
         panel.add(welcomeLabel, gbc);
 
         // Add some space
@@ -139,14 +136,12 @@ public class HotelBookingGUI extends JFrame {
     private JButton createStyledButton(String text) {
         JButton button = new JButton(text);
         button.setFont(new Font("Arial", Font.PLAIN, 14));
-        
-         button.setPreferredSize(new Dimension(200, 40));
-         button.setForeground(new Color(12, 0, 140)); // Dark blue text
 
-         return button;
+        button.setPreferredSize(new Dimension(200, 40));
+        button.setForeground(new Color(12, 0, 140)); // Dark blue text
+
+        return button;
     }
-
-
 
     private JPanel createBookingPanel() {
         JPanel panel = new JPanel(new GridBagLayout());
@@ -421,4 +416,3 @@ public class HotelBookingGUI extends JFrame {
         // This would show a dialog to manage users (add/remove/modify)
     }
 }
-

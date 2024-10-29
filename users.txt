@@ -136,3 +136,15 @@ Admin: false
 Registration Date: 30/10/2024
 =====================================
 
+=== User Registration ===
+Username: testUser
+Admin: true
+Registration Date: 30/10/2024
+=====================================
+
+=== User Registration ===
+Username: testuser1730236738293
+Admin: false
+Registration Date: 30/10/2024
+=====================================
+

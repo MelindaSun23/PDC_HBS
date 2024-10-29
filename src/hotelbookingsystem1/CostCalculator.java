@@ -4,8 +4,8 @@
  */
 package hotelbookingsystem1;
 
-
 public class CostCalculator {
+
     private static final double BREAKFAST_COST = 20.0; //Extra cost for breakfast
 
     public static double calculateCost(Booking booking) {

@@ -2,12 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
-
 package hotelbookingsystem1;
 
 // Base class for person information in booking system
 public abstract class Person {
+
     private String name;
     private String email;
     private String phone;
@@ -22,9 +21,19 @@ public abstract class Person {
     }
 
     // Getters
-    public String getName() { return name; }
-    public String getEmail() { return email; }
-    public String getPhone() { return phone; }
-    public String getAddress() { return address; }
-}
+    public String getName() {
+        return name;
+    }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+}
