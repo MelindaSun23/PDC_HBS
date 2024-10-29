@@ -4,19 +4,22 @@
  */
 package hotelbookingsystem1;
 
-
+//Enum representing different types of rooms available
 public enum RoomType {
-    STANDARD(80),
-    DOUBLE(120),
-    DELUXE(180),
-    ENSUITE(220);
-// the costs
+    STANDARD(80), //Standard room
+    DOUBLE(120), //Double room
+    DELUXE(180), //Deluxe room
+    ENSUITE(220); //Ensuite
+
+    //Cost associated with each room type
     private final double cost;
 
+    //Constructor to set cost of each room type
     RoomType(double cost) {
         this.cost = cost;
     }
 
+    //Getter to access cost of selected room
     public double getCost() {
         return cost;
     }

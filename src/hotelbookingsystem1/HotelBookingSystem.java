@@ -10,7 +10,6 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
 
-
 // Main class
 public class HotelBookingSystem {
     private static final Logger logger = Logger.getLogger(HotelBookingSystem.class.getName());
@@ -31,7 +30,7 @@ public class HotelBookingSystem {
                 loginGUI.setVisible(true);
             });
         } catch (Exception e) {
-            logger.severe("Failed to start application: " + e.getMessage());
+            logger.severe("Failed to start application: " + e.getMessage()); //Log and show error if startup fails
             JOptionPane.showMessageDialog(null, 
                 "Failed to start application: " + e.getMessage(),
                 "Startup Error",

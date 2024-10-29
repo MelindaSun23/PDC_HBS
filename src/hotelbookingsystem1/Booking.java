@@ -7,27 +7,27 @@ package hotelbookingsystem1;
 
 public class Booking {
 
-    private int id;
-    private Customer customer;
-    private RoomType roomType;
-    private String inDate;
-    private String outDate;
-    private boolean Bfast;
+    private int id; //Unique booking id
+    private Customer customer; //Customer info
+    private RoomType roomType; //Room type chosen by customer
+    private String inDate; //Check in data
+    private String outDate; //Check out date
+    private boolean Bfast; //Breakfast option
 
     public Booking(Customer customer, RoomType roomType, String inDate, String outDate, boolean Bfast) {
-        this(0, customer, roomType, inDate, outDate, Bfast);
+        this(0, customer, roomType, inDate, outDate, Bfast); //Calls main constructer with default id
     }
 
     public Booking(int id, Customer customer, RoomType roomType, String inDate, String outDate, boolean Bfast) {
-        this.id = id;
-        this.customer = customer;
-        this.roomType = roomType;
-        this.inDate = inDate;
-        this.outDate = outDate;
-        this.Bfast = Bfast;
+        this.id = id; //Set booking id
+        this.customer = customer; //Set customer info
+        this.roomType = roomType; //Set room type
+        this.inDate = inDate; //Set check in date
+        this.outDate = outDate; //Set check out date
+        this.Bfast = Bfast; //Set breakfast option
     }
 
-    // Getters
+    // Getters, retrieve booking id, customer info, room type, check in date, check out date, and checking if breakfast has been included
     public int getId() {
         return id;
     }
@@ -50,17 +50,5 @@ public class Booking {
 
     public boolean isBfast() {
         return Bfast;
-    }
-
-    Object getCheckInDate() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    Object getCheckOutDate() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    boolean hasBreakfast() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

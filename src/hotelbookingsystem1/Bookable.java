@@ -4,8 +4,9 @@
  */
 package hotelbookingsystem1;
 
-public interface Bookable {
 
-    boolean createBooking(Customer customer, RoomType roomType,
+public interface Bookable {
+// Books a room for customer with given dates, room type, and breakfast option
+    boolean createBooking(Customer customer, RoomType roomType, 
             String checkIn, String outDate, boolean breakfast);
 }

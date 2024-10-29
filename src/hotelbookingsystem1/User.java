@@ -6,26 +6,18 @@ package hotelbookingsystem1;
 
 
 public class User {
+    private int id; //Unique user if
+    private String username; //username for login
+    private boolean isAdmin; //admin privillages flag
 
-    private int id;
-    private String username;
-    private boolean isAdmin;
-
+    //Constructor initializes user with id, username, and admin status
     public User(int id, String username, boolean isAdmin) {
         this.id = id;
         this.username = username;
         this.isAdmin = isAdmin;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public boolean isAdmin() {
-        return isAdmin;
-    }
+    public int getId() { return id; } //get users id
+    public String getUsername() { return username; } //get users username
+    public boolean isAdmin() { return isAdmin; } //check if user has admin rights
 }

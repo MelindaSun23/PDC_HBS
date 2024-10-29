@@ -15,6 +15,7 @@ public class Inputs {
     private final Scanner scanner = new Scanner(System.in);
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
+    //Gets non-empty string input
     public String getStringInput(String prompt) {
         System.out.print(prompt);
         String input = scanner.nextLine().trim();
@@ -24,6 +25,7 @@ public class Inputs {
         return input;
     }
 
+     //Gets integer input with validation
     public int getIntInput(String prompt) {
         System.out.print(prompt);
         while (!scanner.hasNextInt()) {
@@ -36,6 +38,7 @@ public class Inputs {
         return input;
     }
 
+     //Gets yes no input as boolean
     public boolean getBooleanInput(String prompt) {
         System.out.print(prompt);
         String input = scanner.nextLine().trim().toLowerCase();
@@ -48,6 +51,7 @@ public class Inputs {
         return input.equals("yes");
     }
 
+    //Validates and returns phone input
     public String getPhoneInput(String prompt) {
         System.out.print(prompt);
         String phone = scanner.nextLine().trim();
@@ -61,6 +65,7 @@ public class Inputs {
         }
     }
 
+    //Validates and returns date input
     public String getDateInput(String prompt) {
         System.out.print(prompt);
         String dateStr = scanner.nextLine().trim();

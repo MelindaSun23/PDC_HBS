@@ -6,11 +6,10 @@ package hotelbookingsystem1;
 
 
 public class CostCalculator {
-
-    private static final double BREAKFAST_COST = 20.0;
+    private static final double BREAKFAST_COST = 20.0; //Extra cost for breakfast
 
     public static double calculateCost(Booking booking) {
-        double baseCost = booking.getRoomType().getCost();
-        return booking.isBfast() ? baseCost + BREAKFAST_COST : baseCost;
+        double baseCost = booking.getRoomType().getCost(); //Base room cost
+        return booking.isBfast() ? baseCost + BREAKFAST_COST : baseCost; //Add breakfast if chosen
     }
 }

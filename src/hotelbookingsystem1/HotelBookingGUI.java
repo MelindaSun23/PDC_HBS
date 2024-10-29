@@ -4,7 +4,6 @@
  */
 package hotelbookingsystem1;
 
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -12,6 +11,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.logging.Logger;
+
+
 
 public class HotelBookingGUI extends JFrame {
 
@@ -27,10 +28,11 @@ public class HotelBookingGUI extends JFrame {
         super("Hotel Serenity Booking System");
         this.currentUser = user;
         this.bookingManager = new BookingManager();
-        initializeGUI();
+        initializeGUI(); //Set up gui
         logger.info("GUI initialized for user: " + user.getUsername());
     }
 
+    
     private void initializeGUI() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1000, 700);
@@ -38,6 +40,7 @@ public class HotelBookingGUI extends JFrame {
 
         cardLayout = new CardLayout();
         mainPanel = new JPanel(cardLayout);
+        mainPanel.setBackground(new Color(187, 245, 235)); 
 
         // Create and add panels
         mainPanel.add(createMainMenu(), "MainMenu");
@@ -53,9 +56,11 @@ public class HotelBookingGUI extends JFrame {
 
     private JMenuBar createMenuBar() {
         JMenuBar menuBar = new JMenuBar();
+        menuBar.setBackground(new Color(187, 245, 235)); // Light mint green background
 
         // File Menu
         JMenu fileMenu = new JMenu("File");
+        fileMenu.setForeground(new Color(12, 0, 140)); 
         JMenuItem mainMenuItem = new JMenuItem("Main Menu");
         JMenuItem logoutMenuItem = new JMenuItem("Logout");
 
@@ -68,6 +73,7 @@ public class HotelBookingGUI extends JFrame {
 
         // Bookings Menu
         JMenu bookingsMenu = new JMenu("Bookings");
+        bookingsMenu.setForeground(new Color(12, 0, 140)); // Dark blue text
         JMenuItem newBookingItem = new JMenuItem("New Booking");
         JMenuItem viewBookingsItem = new JMenuItem("View Bookings");
 
@@ -86,6 +92,7 @@ public class HotelBookingGUI extends JFrame {
         // Admin Menu
         if (currentUser.isAdmin()) {
             JMenu adminMenu = new JMenu("Admin");
+            adminMenu.setForeground(new Color(12, 0, 140)); // Dark blue text
             JMenuItem userManagement = new JMenuItem("Manage Users");
             userManagement.addActionListener(e -> showUserManagement());
             adminMenu.add(userManagement);
@@ -97,6 +104,7 @@ public class HotelBookingGUI extends JFrame {
 
     private JPanel createMainMenu() {
         JPanel panel = new JPanel(new GridBagLayout());
+        panel.setBackground(new Color(187, 245, 235)); 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);
         gbc.gridwidth = GridBagConstraints.REMAINDER;
@@ -105,6 +113,7 @@ public class HotelBookingGUI extends JFrame {
         // Welcome Label
         JLabel welcomeLabel = new JLabel("Welcome to Hotel Serenity, " + currentUser.getUsername());
         welcomeLabel.setFont(new Font("Arial", Font.BOLD, 24));
+        welcomeLabel.setForeground(new Color(12, 0, 140)); 
         panel.add(welcomeLabel, gbc);
 
         // Add some space
@@ -130,11 +139,15 @@ public class HotelBookingGUI extends JFrame {
     private JButton createStyledButton(String text) {
         JButton button = new JButton(text);
         button.setFont(new Font("Arial", Font.PLAIN, 14));
-        button.setPreferredSize(new Dimension(200, 40));
-        return button;
+        
+         button.setPreferredSize(new Dimension(200, 40));
+         button.setForeground(new Color(12, 0, 140)); // Dark blue text
+
+         return button;
     }
 
-    // Continuing HotelBookingGUI class...
+
+
     private JPanel createBookingPanel() {
         JPanel panel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();

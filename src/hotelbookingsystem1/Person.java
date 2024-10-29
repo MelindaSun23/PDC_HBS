@@ -6,12 +6,14 @@
 
 package hotelbookingsystem1;
 
+// Base class for person information in booking system
 public abstract class Person {
     private String name;
     private String email;
     private String phone;
     private String address;
 
+    // Constructor to initialize a Person with essential info
     public Person(String name, String email, String phone, String address) {
         this.name = name;
         this.email = email;

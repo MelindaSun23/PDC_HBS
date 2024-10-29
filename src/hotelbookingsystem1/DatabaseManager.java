@@ -9,13 +9,13 @@ import java.util.logging.Logger;
 import java.sql.*;
 
 public class DatabaseManager {
-    private static final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
-    private static final String JDBC_URL = "jdbc:derby:hotelDB;create=true";
-    private static final Logger logger = Logger.getLogger(DatabaseManager.class.getName());
+    private static final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver"; //Database driver
+    private static final String JDBC_URL = "jdbc:derby:hotelDB;create=true"; //Database URL
+    private static final Logger logger = Logger.getLogger(DatabaseManager.class.getName()); //Logger for info and error tracking
     
     static {
         try {
-            Class.forName(DRIVER);
+            Class.forName(DRIVER); //Load database driver
         } catch (ClassNotFoundException e) {
             logger.severe("Derby driver not found: " + e.getMessage());
             throw new RuntimeException("Derby driver not found", e);
@@ -24,8 +24,8 @@ public class DatabaseManager {
 
     public static void initializeDatabase() {
         try (Connection conn = getConnection()) {
-            createTables(conn);
-            createDefaultAdmin(conn);
+            createTables(conn); //Set up tables if they dont exist
+            createDefaultAdmin(conn); //Create a default admin user
             logger.info("Database initialized successfully");
         } catch (SQLException e) {
             logger.severe("Failed to initialize database: " + e.getMessage());
@@ -77,7 +77,7 @@ public class DatabaseManager {
         String checkAdmin = "SELECT COUNT(*) FROM Users WHERE username = 'admin'";
         try (PreparedStatement ps = conn.prepareStatement(checkAdmin)) {
             ResultSet rs = ps.executeQuery();
-            if (rs.next() && rs.getInt(1) == 0) {
+            if (rs.next() && rs.getInt(1) == 0) { // If no admin exists create one
                 String insertAdmin = "INSERT INTO Users (username, password, is_admin) VALUES (?, ?, ?)";
                 try (PreparedStatement insertPs = conn.prepareStatement(insertAdmin)) {
                     insertPs.setString(1, "admin");
@@ -91,6 +91,6 @@ public class DatabaseManager {
     }
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(JDBC_URL);
+        return DriverManager.getConnection(JDBC_URL); // Get a database connection
     }
 }
